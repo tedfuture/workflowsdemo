@@ -5,10 +5,8 @@ jobs:
   pytest:
     runs-on: ubuntu-latest
     steps:
-      - name: clone respository
-        run: |
-          git clone https://github.com/tedfuture/workflowsdemo.git
-          cd workflowsdemo
+      - name: checout code
+        uses: actions/checkout@v3
       - name: install pytest
         run: pip install pytest
       - name: run pytest
