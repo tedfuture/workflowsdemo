@@ -27,7 +27,7 @@ jobs:
           echo test, and deploy your project.
           date
   build_on_windows:
-    runs-on: windows-lastest
+    runs-on: windows-latest
     steps:
       - name: run multi-line script
         run: |
