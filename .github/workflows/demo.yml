@@ -28,6 +28,8 @@ jobs:
           date
   build_on_windows:
     runs-on: windows-latest
+    if: ${{success()}}
+    needs: [build_on_linux]
     steps:
       - name: run multi-line script
         run: |
